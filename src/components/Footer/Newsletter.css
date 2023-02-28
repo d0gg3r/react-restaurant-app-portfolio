@@ -1,0 +1,80 @@
+.app__newsletter {
+  padding: 6rem 10rem;
+  border: 1px solid var(--color-golden);
+  background: var(--color-black);
+}
+
+.app__newsletter-heading {
+  text-align: center;
+}
+
+.app__newsletter-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+.app__newsletter-input input {
+  width: 420px;
+  background: var(--color-black);
+  border: 1px solid var(--color-golden);
+  outline: none;
+  color: white;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-family: var(--font-base);
+}
+
+.app__newsletter-input input::placeholder {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px){
+  .app__newsletter-input input {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .app__newsletter {
+    padding: 4rem 6rem;
+  }
+
+  .app__newsletter-heading h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .app__newsletter-input {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app__newsletter-input input {
+    width: 100%;
+    margin-bottom: 1  rem;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .app__newsletter {
+    padding: 2rem 0;
+    border: none; 
+  }
+
+  .app__newsletter-input {
+  }
+}
+
+@media screen and (max-width: 300px){
+  .app__newsletter-heading h1 {
+    font-size: 2rem;
+  }
+}
